@@ -1,0 +1,43 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="background-section">
+    <div class="form-container">
+        <form class="location-form">
+            <h2>Welcome to The Pub Hub!</h2>
+            <label for="location">Where are you Going?</label>
+            <input type="text" id="location" name="location" placeholder="Enter city or destination" required>
+            <button type="submit">Find Pubs</button>
+        </form>
+    </div>
+</div>
+
+<div class="white-section">
+    <div class="grey-div">
+        <h2>Are you a student studying abroad?</h2>
+        <p>If so, then this website is for you! Add more information. blah blah blah blah. Please choose a different font.</p>
+    </div>
+
+    <div class="info-title">
+        <h1>How does it Work?</h1>
+    </div>
+</div>
+
+<div class="info-boxes">
+    <div class="info-box">
+        <h3>Box 1</h3>
+        <p>In this box will go information about how the website works. Pulls local restuarants / pubs, shows you the student reviews associated with them.</p>
+    </div>
+    <div class="info-box">
+        <h3>Box 2</h3>
+        <p>In this post will go posting, mentioning that you should sign in. Works as both a blog and a helpful guide to other students.</p>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}
