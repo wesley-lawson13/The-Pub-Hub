@@ -1,41 +1,51 @@
 {% extends "home/layout.html" %}
 {% load static %}
 
+{% block title %}
+    Home
+{% endblock %}
 {% block body %}
 
-<div class="background-section">
-    <div class="form-container">
-        <form class="location-form">
-            <h2>Welcome to The Pub Hub!</h2>
-            <label for="location">Where are you Going?</label>
-            <input type="text" id="location" name="location" placeholder="Enter city or destination" required>
-            <button type="submit">Find Pubs</button>
-        </form>
+<div class="container-fluid text-center">
+    <div class="row" style=
+    "background-image: url('static/home/background.jpeg');
+    background-size: cover;
+    height: 80vh;">
+        <div class="col" style="backdrop-filter: blur(8px)">
+            <div class="row align-items-center justify-content-center" style="height: 80vh;">
+                <div class="col-6">
+                    <form class="bg-light rounded bg-opacity-75 p-3 shadow-lg">
+                        <h2 class="text-center">Welcome to <a href="{% url 'about' %}" class="navbar-brand">The Pub Hub!</a></h2>
+                        <label class="form-label" for="location">Where are you Going?</label>
+                        <input type="text" class="form-control" name="location" placeholder="Enter city or destination" required>
+                        <button class="btn btn-danger m-2 p-2 btn-lg" type="submit" style="font-family: CelticFont; font-size: x-large;">Find Pubs</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 shadow-lg rounded-3 m-4 p-2 bg-light">
+            <h2 class="text-center">Are you a student studying abroad?</h2>
+            <p class="text-center">If so, then this website is for you! Add more information. blah blah blah blah. Please choose a different font.</p> 
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4 m-4">
+            <h1 class="text-center">How Does it Work?</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 shadow-lg rounded-3 m-4 p-2">
+            <h3 class="text-center">Box 1</h3>
+            <p>In this box will go information about how the website works. Pulls local restuarants / pubs, shows you the student reviews associated with them.</p>
+        </div>
+        <div class="col-5 shadow-lg rounded-3 m-4 p-2">
+            <h3 class="text-center">Box 2</h3>
+            <p>In this post will go posting, mentioning that you should sign in. Works as both a blog and a helpful guide to other students.</p>
+        </div>
     </div>
 </div>
-
-<div class="white-section">
-    <div class="grey-div">
-        <h2>Are you a student studying abroad?</h2>
-        <p>If so, then this website is for you! Add more information. blah blah blah blah. Please choose a different font.</p>
-    </div>
-
-    <div class="info-title">
-        <h1>How does it Work?</h1>
-    </div>
-</div>
-
-<div class="info-boxes">
-    <div class="info-box">
-        <h3>Box 1</h3>
-        <p>In this box will go information about how the website works. Pulls local restuarants / pubs, shows you the student reviews associated with them.</p>
-    </div>
-    <div class="info-box">
-        <h3>Box 2</h3>
-        <p>In this post will go posting, mentioning that you should sign in. Works as both a blog and a helpful guide to other students.</p>
-    </div>
-</div>
-
 
 {% endblock %}
 
