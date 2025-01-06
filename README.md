@@ -15,7 +15,7 @@ users will rate the restaurant/pub out of 5, and optionally write a review and p
 can like a review or comment on a review. Users can also choose to follow the author of the review and view the other restaurants/pubs and locations they visited during
 their time in Europe. Finally, users can search locations, users, and restaurants/pubs to make finding reviews easier. 
 
-Currently, I'm working on a simple design of the website using the CSS Bootstrap framework. 
+Currently, I'm working on configuring and building the database models and continuing to refine the design using the Bootstrap CSS framework. 
 
 Unfortunately, there is no current webserver for 'The Pub Hub' application. To view the application, run the following commands in your terminal:
   1. Clone this git repository, running  the command **git clone https://github.com/wesley-lawson13/The-Pub-Hub**
